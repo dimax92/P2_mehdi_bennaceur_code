@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 img {
     object-fit: cover;
 }
@@ -14,6 +19,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 95%;
+}
+main {
+    width: 95%;
 }
 .logo {
     height: 30px;
@@ -59,9 +68,11 @@ nav {
 }
 form{
     display:flex;
+    width: 32%;
+    min-width: 384px;
 }
 input[type=text] {
-    width: 170px;
+    width: 60%;
     height: 36.67px;
     border: solid 0.3px #00000026;
     font-weight: bold;
@@ -69,13 +80,14 @@ input[type=text] {
 button {
     border-radius: 0px 10px 10px 0px;
     height: 40px;
-    width: 100px;
+    width: 35%;
     background: #0065FC;
     color: white;
     border: none;
 }
 .sectionfiltres{
     display:flex;
+    justify-content: flex-start;
 }
 .filtres {
     font-weight: bold;
@@ -84,7 +96,7 @@ button {
 }
 .articlefiltre {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -126,13 +138,14 @@ button {
     display:flex;
     flex-direction:row;
     margin-top:10px;
+    justify-content: space-between;
 }
 .sectionhebergement {
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 20px;
-    max-width: 850px;
+    width: 65%;
 }
 .imagehebergement{
     height: 100px;
@@ -142,7 +155,7 @@ button {
 }
 .phebergements {
     font-weight: bold;
-    margin-left: 10px;
+    margin: 3% 0% 1.5% 4%;
     font-size: 110%;
 }
 .sectionhebergementarticle {
@@ -157,10 +170,12 @@ button {
     color: black;
     border-radius: 11px;
     margin-bottom: 20px;
+    width: 30%;
+    min-width: 205px;
 }
 .articlehebergement{
     background: white;
-    width: 220px;
+    width: 100%;
     height: 160px;
     display: flex;
     flex-direction: column;
@@ -171,13 +186,12 @@ button {
     margin: 3px;
     font-weight: bold;
     font-size: 13px;
-    width:210px;
+    width: 90%;
 }
 .p2articlehebergement{
     margin: 0px;
     font-size: 13px;
-    margin-left: 3px;
-    width: 210px;
+    width: 90%;
 }
 .afficher {
     font-size: 15px;
@@ -191,21 +205,24 @@ button {
     background: #F2F2F2;
     border-radius: 20px;
     margin-left: 30px;
+    width: 30%;
 }
 .ppopulaires {
     font-weight: bold;
-    margin: 20px 0px 0px 10px;
+    margin: 6% 0% 1% 5%;
     font-size: 110%;
 }
 .ssectionpopulaire {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .apopulaire {
     text-decoration: none;
     color: black;
     border-radius: 11px;
     margin: 15px;
-    width:350px;
+    width:90%;
 }
 .articlepopulaire {
     background: white;
@@ -221,7 +238,7 @@ button {
 }
 .imagepopulaire {
     height: 120px;
-    width: 120px;
+    width: 36%;
     min-width: 120px;
     margin: 3px;
     border-radius: 10px 0px 0px 10px;
@@ -250,22 +267,36 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    height:341px;
 }
 .aactivite {
     text-decoration: none;
     color: black;
     border-radius: 11px;
-    margin: 5px;
+}
+.aactivite1 {
+    width:22%;
+}
+.aactivite2 {
+    width:100%;
+    height:45%;
+}
+.aaactivite1 {
+    height:50%;
+}
+.aaactivite2 {
+    height:40%;
 }
 .articleactivite1{
     display: flex;
     flex-direction: column;
-    width: 260px;
     border-radius: 10px;
     box-shadow: 0px 2px 11px #00000040;
+    width: 100%;
+    height: 100%;
 }
 .imageactivite1{
-    height: 290px;
+    height: 86%;
     border-radius: 10px 10px 0px 0px;
 }
 .particleactivite1{
@@ -276,13 +307,22 @@ button {
 .articleactivite2{
     display: flex;
     flex-direction: column;
-    width: 260px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 2px 11px #00000040;
+    height:100%;
 }
 .imageactivite2{
-    height: 100px;
     border-radius: 10px 10px 0px 0px;
+}
+.imageactivite21{
+    height: 72%;
+}
+.imageactivite22{
+    height: 65%;
+}
+.imageactivite23{
+    height: 70%;
 }
 .particleactivite2{
     font-size: 13px;
@@ -293,35 +333,40 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 22%;
+    height: 100%;
 }
 .ssectionactivite2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 22%;
+    height: 100%;
 }
 footer{
     display: flex;
     background: #F2F2F2;
     margin-top: 30px;
     flex-direction: row;
+    width: 100%;
 }
 .articlefooter1{
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
-    margin-left: 20px;
+    margin-right: 15%;
+    margin-left: 3%;
 }
 .articlefooter2{
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
-    margin-left: 20px;
+    margin-right: 15%;
+    margin-left: 3%;
 }
 .articlefooter3{
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
-    margin-left: 20px;
+    margin-right: 15%;
+    margin-left: 3%;
 }
 .titre {
     font-weight: bold;
@@ -333,7 +378,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 15%;
     border-radius: 10px 0px 0px 10px;
 }
 .map{
@@ -349,7 +394,7 @@ footer{
 }
 .etoiles{
     display: flex;
-    width: 210px;
+    width: 90%;
 }
 .articlelogopopulaire {
     display: flex;
@@ -358,12 +403,13 @@ footer{
 .logopopulaire {
     font-size: 18px;
     height: 18px;
-    margin: 20px 10px 0px 0px;
+    margin: 6% 5% 1% 0%;
 }
 aside {
     display: flex;
     flex-direction: row;
     margin-top: 5px;
+    align-items: center;
 }
 .articlelogoinfo {
     display: flex;
@@ -382,12 +428,6 @@ aside {
     button::before {
         content:"Rechercher";
     }
-    .imageactivite21{
-        height: 130px;
-    }
-    .imageactivite22{
-        height: 70px;
-    }
 }
 @media (max-width: 992px) {
     .sectionmarseillepopulaire {
@@ -396,29 +436,28 @@ aside {
         align-items: center;
         justify-content: space-around;
     }
+    .sectionhebergement {
+        width: 98%;
+    }
     .sectionpopulaire {
         margin-top: 30px;
-    }
-    .articleactivite1 {
-        width: 230px;
-    }
-    .articleactivite2 {
-        width: 230px;
+        width: 60%;
     }
     footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 }
-@media (min-width:769px){
-    body {
-        margin: 0px 30px;
-    }
-}
 @media (max-width:768px) {
+    body {
+        display:initial;
+        flex-direction:initial;
+        align-items:initial;
+    }
     header {
         flex-direction: column;
         align-items: center;
+        width: initial;
     }
     nav {
         width:100%;
@@ -445,15 +484,18 @@ aside {
         color:#0065FC;
         border-bottom: solid #0065FC;
     }
+    main{
+        width:inherit;
+    }
     input[type=text]{
-        width:200px;
+        width:70%;
     }
     button {
-        width: initial;
+        width: 15%;
         border-radius: 10px;
-        padding: 0px 15px;
         position: relative;
         right: 12px;
+        text-align: center;
     }
     button::before {
         content:"\f002";
@@ -464,10 +506,13 @@ aside {
     }
     form {
         margin-top: 30px;
+        min-width: initial;
+        width: 98%;
     }
     .sectionfiltres {
         flex-direction: column;
         margin: 0px 15px;
+        justify-content: initial;
     }
     .filtres {
         margin-bottom: 0px;
@@ -541,11 +586,18 @@ aside {
         flex-direction: column;
         align-items: center;
         padding: 0px 15px;
+        height: initial;
     }
     .aactivite {
         width:100%;
         margin: initial;
         max-width: 300px;
+    }
+    .aaactivite1 {
+        height: initial; 
+    }
+    .aactivite2 {
+        height: initial;
     }
     .articleactivite1 {
         height: 150px;
@@ -555,24 +607,37 @@ aside {
     .imageactivite1 {
         height: 100px;
     }
+    .imageactivite21 {
+        height: 100px;
+    }
+    .imageactivite22 {
+        height: 100px;
+    }
+    .imageactivite2 {
+        height: 100px;
+    }
     .articleactivite2{
         margin-bottom: 20px;
         width: 100%;
+        height: initial;
     }
     .ssectionactivite1 {
         margin-left: initial;
         width: 100%;
         max-width: 300px;
+        height: initial;
     }
     .ssectionactivite2 {
         margin-left: initial;
         width: 100%;
         max-width: 300px;
+        height: initial;
     }
     footer {
         flex-direction: column;
         height: 800px;
         justify-content: space-evenly;
+        width: initial;
     }
     .articlefooter1 {
         margin-right: initial;
@@ -591,9 +656,6 @@ aside {
 }
 
 @media (max-width:430px){
-    .apopulaire {
-        width:initial;
-    }
     .sectionhebergementarticle{
         justify-content: center;
     }
